@@ -53,7 +53,7 @@ function Form() {
         />
         <input type="submit" id="submit" />
       </form>
-      {error && <p>Error : {error}</p>}
+      {error && <p style={{color:'red'}}>Error : {error}</p>}
     </div>
   );
 }
