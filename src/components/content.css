@@ -1,0 +1,107 @@
+/* Centered loader with spinning effect */
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #4CAF50;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute; /* Centers the loader */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main content container with responsive grid layout */
+.content-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid container */
+}
+
+/* Album item styling */
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for items */
+.items:hover {
+  transform: scale(1.05);
+  background-color: #e7e7e7;
+}
+
+/* Album icon styling */
+.items .fa-compact-disc {
+  color: #4CAF50;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Album title styling */
+.items h1 {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+
+}
+
+
+
+/* Pagination container styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Styling for pagination buttons */
+.pagination button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.pagination button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Disabled button styling (if needed) */
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

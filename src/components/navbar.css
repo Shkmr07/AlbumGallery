@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Ewert&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ewert&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Prism&display=swap");
+.navbar {
+  background-color: #dff2eb;
+  text-align: center;
+}
+
+.navbar h1 {
+  font-family: "Ewert", serif;
+  margin: 0px 0px 10px 0px;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-family: "Sour Gummy", serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.navbar li {
+  padding-bottom: 10px;
+}
+
+.navbar li a:hover {
+  text-decoration: underline;
+}
